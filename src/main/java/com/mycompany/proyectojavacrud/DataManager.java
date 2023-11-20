@@ -35,7 +35,7 @@ public class DataManager {
         
     }
     
-    public static void eliminarProductos(Producto p){
+    public static void eliminarProducto(Producto p){
         
         productos.remove(p);
         
@@ -52,5 +52,16 @@ public class DataManager {
         reservas.remove(r);
         
     }
+    
+    public static Producto getProducto(String name) {
+        
+        for (Producto p : productos) {
+            if (p.getNombre().equals(name)) {
+                return p;
+            }
+        }
+    return null;
+}
+
     
 }

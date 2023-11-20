@@ -31,7 +31,7 @@ public class MenuPedidos extends JFrame {
         opcion3Button.setAlignmentX(CENTER_ALIGNMENT);
         panel.add(opcion3Button);
 
-        JButton opcion4Button = new JButton("4 - Mostrar productos");
+        JButton opcion4Button = new JButton("4 - Mostrar pedidos");
         opcion4Button.setAlignmentX(CENTER_ALIGNMENT);
         panel.add(opcion4Button);
 
@@ -40,23 +40,19 @@ public class MenuPedidos extends JFrame {
         panel.add(opcion5Button);
 
         opcion1Button.addActionListener(e -> {
-            // Lógica para agregar un pedido
-            JOptionPane.showMessageDialog(this, "Seleccionaste: Agregar pedido");
+            new RegistroPedido();
         });
 
         opcion2Button.addActionListener(e -> {
-            // Lógica para actualizar lista de pedidos
-            JOptionPane.showMessageDialog(this, "Seleccionaste: Actualizar lista de pedido");
+            new ActualizarPedido();
         });
 
         opcion3Button.addActionListener(e -> {
-            // Lógica para eliminar un pedido
-            JOptionPane.showMessageDialog(this, "Seleccionaste: Eliminar un pedido");
+            new EliminarPedido();
         });
 
         opcion4Button.addActionListener(e -> {
-            // Lógica para mostrar productos
-            JOptionPane.showMessageDialog(this, "Seleccionaste: Mostrar productos");
+            new ListaPedidos();
         });
 
         opcion5Button.addActionListener(e -> {

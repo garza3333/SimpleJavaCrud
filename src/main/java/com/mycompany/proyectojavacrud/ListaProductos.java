@@ -24,8 +24,15 @@ public class ListaProductos extends JFrame {
         JButton mostrarButton = new JButton("Mostrar Productos");
         mostrarButton.addActionListener(e -> mostrarInformacionProductos());
 
+        JButton salirButton = new JButton("Salir");
+        salirButton.addActionListener(e -> cerrarVentanaActual());
+
+        JPanel buttonPanel = new JPanel();
+        buttonPanel.add(mostrarButton);
+        buttonPanel.add(salirButton);
+
         panel.add(scrollPane, BorderLayout.CENTER);
-        panel.add(mostrarButton, BorderLayout.SOUTH);
+        panel.add(buttonPanel, BorderLayout.SOUTH);
 
         add(panel);
         setVisible(true);
@@ -45,5 +52,13 @@ public class ListaProductos extends JFrame {
             }
         }
     }
+
+    private void cerrarVentanaActual() {
+        SwingUtilities.invokeLater(() -> {
+            setVisible(false);
+            dispose();
+        });
+    }
+
 
 }

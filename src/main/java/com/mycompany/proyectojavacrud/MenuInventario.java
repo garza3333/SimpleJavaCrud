@@ -40,23 +40,21 @@ public class MenuInventario extends JFrame {
         panel.add(opcion5Button);
 
         opcion1Button.addActionListener(e -> {
-            // Lógica para registrar nuevos productos
-            JOptionPane.showMessageDialog(this, "Seleccionaste: Registrar nuevos productos");
+            new RegistroProducto();
         });
 
         opcion2Button.addActionListener(e -> {
-            // Lógica para actualizar información de productos existentes
-            JOptionPane.showMessageDialog(this, "Seleccionaste: Actualizar información de productos existentes");
+            new ActualizarProducto();
         });
 
         opcion3Button.addActionListener(e -> {
-            // Lógica para eliminar productos del inventario
-            JOptionPane.showMessageDialog(this, "Seleccionaste: Eliminar productos del inventario");
+           
+            new EliminarProducto();
+            
         });
 
         opcion4Button.addActionListener(e -> {
-            // Lógica para mostrar productos registrados
-            JOptionPane.showMessageDialog(this, "Seleccionaste: Mostrar productos registrados");
+            new ListaProductos();
         });
 
         opcion5Button.addActionListener(e -> {

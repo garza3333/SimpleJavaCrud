@@ -9,7 +9,7 @@ public class Pedido {
     private ArrayList<Producto> productos;
 
     public Pedido() {
-        this.numeroPedido = DataManager.productos.size()+1;
+        this.numeroPedido = DataManager.pedidos.size()+1;
         this.productos = new ArrayList();
     }
 

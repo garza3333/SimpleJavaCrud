@@ -40,25 +40,20 @@ public class MenuReservacion extends JFrame {
         panel.add(opcion5Button);
 
         opcion1Button.addActionListener(e -> {
-            // Lógica para hacer una reservación de mesa
-            int numeroPersonas = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el número de personas:"));
-            String nombreReserva = JOptionPane.showInputDialog("Ingrese el nombre de quien reserva la mesa:");
-            JOptionPane.showMessageDialog(this, "Reservación realizada para " + numeroPersonas + " personas a nombre de " + nombreReserva);
+            new RegistroReserva();
         });
 
         opcion2Button.addActionListener(e -> {
             // Lógica para actualizar lista de reservas
-            JOptionPane.showMessageDialog(this, "Seleccionaste: Actualizar lista de reservas");
+            new ActualizarReserva();
         });
 
         opcion3Button.addActionListener(e -> {
-            // Lógica para eliminar una reservación
-            JOptionPane.showMessageDialog(this, "Seleccionaste: Eliminar una reservación");
+            new EliminarReserva();
         });
 
         opcion4Button.addActionListener(e -> {
-            // Lógica para mostrar lista de reservaciones
-            JOptionPane.showMessageDialog(this, "Seleccionaste: Mostrar lista de reservaciones");
+            new ListaReservas();
         });
 
         opcion5Button.addActionListener(e -> {

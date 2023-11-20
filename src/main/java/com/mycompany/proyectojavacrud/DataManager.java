@@ -61,7 +61,16 @@ public class DataManager {
             }
         }
     return null;
-}
+     }
+    
+    public static void actualizarReserva(Reserva r){
+        
+        for(Reserva rr : reservas){
+            if(rr.getId() == r.getId()){
+                rr = r;
+            }
+        }
+    }
 
     
 }

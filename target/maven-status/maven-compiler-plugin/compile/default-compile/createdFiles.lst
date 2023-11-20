@@ -1,3 +1,5 @@
+com\mycompany\proyectojavacrud\RegistroReserva.class
+com\mycompany\proyectojavacrud\ActualizarReserva.class
 com\mycompany\proyectojavacrud\ListaPedidos.class
 com\mycompany\proyectojavacrud\MenuEmpleados.class
 com\mycompany\proyectojavacrud\ActualizarEmpleado.class
@@ -8,12 +10,14 @@ com\mycompany\proyectojavacrud\MenuPrincipal.class
 com\mycompany\proyectojavacrud\Pedido.class
 com\mycompany\proyectojavacrud\MenuInventario.class
 com\mycompany\proyectojavacrud\Reserva.class
+com\mycompany\proyectojavacrud\ListaReservas.class
 com\mycompany\proyectojavacrud\DataManager.class
 com\mycompany\proyectojavacrud\ListaEmpleados.class
 com\mycompany\proyectojavacrud\MenuFacturacion.class
 com\mycompany\proyectojavacrud\ProyectoJavaCRUD.class
 com\mycompany\proyectojavacrud\RegistroEmpleado.class
 com\mycompany\proyectojavacrud\Producto.class
+com\mycompany\proyectojavacrud\EliminarReserva.class
 com\mycompany\proyectojavacrud\Lobby.class
 com\mycompany\proyectojavacrud\RegistroPedido.class
 com\mycompany\proyectojavacrud\EliminarEmpleado.class
